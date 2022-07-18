@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myFirstApp">
     <head>
         <meta charset="utf-8">
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
         <title>Hola Angular</title>
     </head>
     <body>
-        <h1>Hola Angular</h1>
+        <h1>Bla</h1>
+        <div ng-controller="MyFirstController">
+            {{name}}
+            {{sayHello()}}
+            <input type="text" ng-model="name">
+            Inside my input is: {{name}}
+        </div>
 
     </body>
 </html>
